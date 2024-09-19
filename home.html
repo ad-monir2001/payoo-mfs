@@ -19,7 +19,7 @@
             <img src="./images/logo.svg" alt="" />
           </div>
           <div class="money">
-            <h1 class="text-lg font-extrabold">$4500</h1>
+            <h1 class="text-lg font-extrabold" >$ <span id="balance">45000</span></h1>
             <p class="font-normal text-slate-500">Available Balance</p>
           </div>
         </div>
@@ -113,7 +113,7 @@
                 type="number"
                 placeholder="Enter Amount"
                 class="input input-bordered"
-                id="phoneNumber"
+                id="amount"
                 required
               />
             </div>
@@ -129,10 +129,11 @@
                 required
               />
             </div>
+            <p id="pin-alert" class="text-red-500 font-semibold text-lg text-center mt-4"></p>
             <div class="form-control mt-6">
               <button
                 class="btn btn-primary rounded-3xl font-semibold text-xl text-white bg-blue-600 border-none"
-                id="loginBtn"
+                id="addMoney-btn"
               >
                 Add Money
               </button>
