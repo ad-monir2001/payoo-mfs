@@ -6,8 +6,8 @@ document.getElementById('loginBtn').addEventListener('click', function (event) {
   console.log(pinNumber);
 
   if (number === '01521544143' && pinNumber === '544143') {
-    window.location.href = '/home.html';
+    window.location.href = '../home.html';
   } else {
-    alert('Gayebul Hawa');
+    alert('গায়েবুল হাওয়া');
   }
 });
