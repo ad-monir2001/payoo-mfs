@@ -1,3 +1,5 @@
 document.getElementById('money-el').addEventListener('click',function(){
-    window.location.href = '../addMoney.html'
+    const addMoney = document.getElementById('add-money');
+    console.log(addMoney);
+    addMoney.setAttribute('class','block')
 })

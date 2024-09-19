@@ -39,16 +39,17 @@
         >
           <!-- card Add Money-->
           <div
-            class="card bg-base-100 w-28 shadow-xl items-center text-center py-10 border-2 border-gray-400"
-          id="money-el">
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-10 border-2 border-gray-400 cursor-pointer"
+            id="money-el"
+          >
             <figure class="">
               <img src="./images/wallet.svg" alt="Shoes" class="rounded-xl" />
             </figure>
             <h1 class="text-lg font-semibold mt-3">Add Money</h1>
           </div>
-          <!-- card -->
+          <!-- card Cash out-->
           <div
-            class="card bg-base-100 w-28 shadow-xl items-center text-center py-12 px-2 border-2 border-gray-400"
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-12 px-2 border-2 border-gray-400 cursor-pointer"
           >
             <figure class="">
               <img src="./images/send.svg" alt="Shoes" class="rounded-xl" />
@@ -95,6 +96,46 @@
             </figure>
             <h1 class="text-lg font-semibold mt-3">Transactions</h1>
           </div>
+        </div>
+      </div>
+      <div id="add-money" class="hidden">
+        <div class="divider"></div>
+        <h1 class="font-semibold text-lg">Add Money</h1>
+        <div>
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-base font-medium">Amount</span>
+              </label>
+              <input
+                type="number"
+                placeholder="Enter Amount"
+                class="input input-bordered"
+                id="phoneNumber"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-base font-medium">Pin Number</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Enter 4 Digit Pin"
+                class="input input-bordered"
+                id="pin-number"
+                required
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button
+                class="btn btn-primary rounded-3xl font-semibold text-xl text-white bg-blue-600 border-none"
+                id="loginBtn"
+              >
+                Add Money
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
