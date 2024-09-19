@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home page</title>
-</head>
-<body>
-    <h1>hello guest</h1>
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center flex-col px-4">
+      <nav class="mt-4 flex justify-between items-center gap-10">
+        <div class="flex items-center">
+          <div class="logo__container">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <div class="money">
+            <h1 class="text-lg font-extrabold">$4500</h1>
+            <p class="font-normal text-slate-500">Available Balance</p>
+          </div>
+        </div>
+        <button class="btn">Log Out</button>
+      </nav>
+      <div class="divider"></div>
+      <div>
+        <h1 class="text-2xl font-bold mb-3">Welcome to Payooo!</h1>
+        <p class="text-slate-500 font-normal">
+          Enjoy easy and convenient financial services with us.
+        </p>
+
+        <!-- ! grid container -->
+
+        <div
+          class="card__container grid grid-cols-3 grid-rows-2 gap-4 justify-between mt-8"
+        >
+          <!-- card -->
+          <div
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-10 border-2 border-gray-400"
+          >
+            <figure class="">
+              <img src="./images/wallet.svg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <h1 class="text-lg font-semibold mt-3">Add Money</h1>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-12 px-2 border-2 border-gray-400"
+          >
+            <figure class="">
+              <img src="./images/send.svg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <h1 class="text-lg font-semibold mt-3">Cash out</h1>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-12 px-2 border-2 border-gray-400"
+          >
+            <figure class="">
+              <img src="./images/money.svg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <h1 class="text-lg font-semibold mt-3">Transfer Money</h1>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-12 px-2 border-2 border-gray-400"
+          >
+            <figure class="">
+              <img
+                src="./images/financial.svg"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <h1 class="text-lg font-semibold mt-3">Get Bonus</h1>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-12 px-2 border-2 border-gray-400"
+          >
+            <figure class="">
+              <img src="./images/purse.svg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <h1 class="text-lg font-semibold mt-3">Pay Bill</h1>
+          </div>
+          <!-- card -->
+          <div
+            class="card bg-base-100 w-28 shadow-xl items-center text-center py-12 px-2 border-2 border-gray-400"
+          >
+            <figure class="">
+              <img src="./images/transaction.svg" alt="" class="rounded-xl" />
+            </figure>
+            <h1 class="text-lg font-semibold mt-3">Transactions</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

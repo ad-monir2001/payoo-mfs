@@ -3,8 +3,11 @@ document.getElementById('loginBtn').addEventListener('click', function (event) {
   console.log('clicked');
   const number = document.getElementById('phoneNumber').value;
   const pinNumber = document.getElementById('pin-number').value;
+  console.log(pinNumber);
 
-  if (number === '01521544143' || pinNumber === '544143'){
-    window.location.href = '/home.html'
+  if (number === '01521544143' && pinNumber === '544143') {
+    window.location.href = '/home.html';
+  } else {
+    alert('Gayebul Hawa');
   }
 });
