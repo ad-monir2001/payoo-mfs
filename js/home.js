@@ -1,16 +1,3 @@
-// ! Add money function
-// document.getElementById('money-el').addEventListener('click', function () {
-//   const addMoney = document.getElementById('add-money');
-//   addMoney.classList.remove('hidden');
-//   document.getElementById('cash-out-container').classList.add('hidden');
-// });
-
-// ! Cash out function
-// document.getElementById('cash-out').addEventListener('click', function () {
-//   document.getElementById('cash-out-container').classList.remove('hidden');
-//   document.getElementById('add-money').classList.add('hidden');
-// });
-
 // ! log out functionality
 
 document.getElementById('logout-btn').addEventListener('click', function () {
@@ -73,11 +60,13 @@ document
 
 // ! functionality hidden and block / toggle on cards
 
-document.getElementById('money-el').addEventListener('click', function () {
-  showSectionId('add-money');
-});
+document
+  .getElementById('add-money-card')
+  .addEventListener('click', function () {
+    showSectionId('add-money-container');
+  });
 
-document.getElementById('cash-out').addEventListener('click', function () {
+document.getElementById('cash-out-card').addEventListener('click', function () {
   showSectionId('cash-out-container');
 });
 
